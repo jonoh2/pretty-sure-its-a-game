@@ -1,8 +1,14 @@
+/**
+ * Some random pong code jon wrote in early may 2021
+ * pong.h declaration was added today (10/16)
+ */
 #include <stdio.h>
 #include <stdlib.h>
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+
+#include "pong.h"
 
 struct vec3 {
     float x;
@@ -512,7 +518,7 @@ void update(GLFWwindow* window) {
     }
 }
 
-int main() {
+int run() {
     init(); // window hints and init
 
     // WINDOWING
